@@ -26,7 +26,7 @@
 			<div class="authorization__inner">
 				<div class="authorization__left">
 					<div class="authorization__left-wrapp">
-						<h1 class="authorization__title">Подружитесь с геймерами со всего мира на E-Play</h1>
+						<h1 class="authorization__title">Подружитесь с геймерами <br> со всего мира на E-Play</h1>
 						<div class="authorization__img">
 							<img src="img/authorization-img.webp" alt="">
 						</div>
@@ -36,34 +36,34 @@
 					<h2 class="authorization__right-title">Добро пожаловать на E-play</h2>
 					<div class="authorization__tabs">
 						<div class="authorization__tabs-head">
-							<div class="authorization__tab-btn" data-tab-path="1">Войти</div>
-							<div class="authorization__tab-btn authorization__tab-btn--active" data-tab-path="2">Зарегистрироваться</div>
+							<div class="authorization__tab-btn authorization__tab-btn--active" data-tab-path="1">Войти</div>
+							<div class="authorization__tab-btn" data-tab-path="2">Зарегистрироваться</div>
 						</div>
 						<div class="authorization__tabs-body">
-							<div class="authorization__tabs-content" data-content-path="1">
+							<div class="authorization__tabs-content authorization__tabs-content--active" data-content-path="1">
 								<form class="authorization__form form">
 									<fieldset class="authorization__form-group form-group">
 										<span>E-mail</span>
 										<input type="email" placeholder="Пожалуйста, введите свой E-mail">
 									</fieldset>
+                                    <fieldset class="authorization__form-group form-group">
+                                        <span>Пароль</span>
+                                        <div class="password-input">
+                                            <i class="password-btn">
+                                                <img src="img/password-icon.svg" alt="">
+                                            </i>
+                                            <input class="password" type="password" placeholder="Пожалуйста, введите свой пароль">
+                                        </div>
+                                    </fieldset>
 									<fieldset class="authorization__form-group form-group">
-										<span>Пароль</span>
-										<div class="password-input">
-											<i class="password-btn">
-												<img src="img/password-icon.svg" alt="">
-											</i>
-											<input #password type="password" placeholder="Пожалуйста, введите свой пароль">
-										</div>
-									</fieldset>
-									<fieldset class="authorization__form-group form-group">
-										<a class="authorization__form-info" href="">Забыли свой пароль?</a>
+										<a class="authorization__form-info" href="##">Забыли свой пароль?</a>
 									</fieldset>
 									<fieldset class="authorization__form-group form-group">
 										<button class="authorization__form-btn btn-violet">Войти</button>
 									</fieldset>
 								</form>
 							</div>
-							<div class="authorization__tabs-content authorization__tabs-content--active" data-content-path="2">
+							<div class="authorization__tabs-content" data-content-path="2">
 								<form class="authorization__form form">
 									<fieldset class="authorization__form-group form-group">
 										<span>E-mail</span>
@@ -75,17 +75,23 @@
 											<i class="password-btn">
 												<img src="img/password-icon.svg" alt="">
 											</i>
-											<input #password type="password" placeholder="Пожалуйста, введите свой пароль">
+											<input class="password" type="password" placeholder="Пожалуйста, введите свой пароль">
 										</div>
 									</fieldset>
 									<fieldset class="authorization__form-group form-group">
 										<div class="authorization__form-radio">
 											<div class="form-radio">
-												<input class="radio" type="radio">
+												<input class="radio" type="radio"
+                                                       onMouseDown="this.isChecked=this.checked;"
+                                                       onClick="this.checked=!this.isChecked;"
+                                                       name="myradio">
 												<label>Я продавец</label>
 											</div>
 											<div class="form-radio">
-												<input class="radio" type="radio">
+												<input class="radio" type="radio"
+                                                       onMouseDown="this.isChecked=this.checked;"
+                                                       onClick="this.checked=!this.isChecked;"
+                                                       name="myradio2">
 												<label>Я покупатель</label>
 											</div>
 										</div>
@@ -107,6 +113,24 @@
 						</div>
 					</div>
 				</div>
+                <div class="recovery">
+                    <h2 class="recovery__title">Восстановить пароль</h2>
+                    <div class="recovery__desc">Мы отправим письмо с инструкцией на вашу электронную почту</div>
+                    <form class="recovery__form form">
+                        <fieldset class="recovery__form-group form-group">
+                            <span>E-mail</span>
+                            <input type="email" placeholder="Пожалуйста, введите свой E-mail">
+                        </fieldset>
+                        <fieldset class="recovery__form-group form-group">
+                            <div class="recovery__form-btns">
+                                <div class="recovery__form-back btn-blue">
+                                    <img src="img/recovery-back.svg" alt="">
+                                </div>
+                                <button class="recovery__form-btn btn-violet">Подтвердить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
 			</div>
 		</div>
 	</section>
