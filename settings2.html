@@ -7,7 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Настройки аккаунта продавца</title>
+	<title>Настройки аккаунта покупателя</title>
 </head>
 
 
@@ -123,18 +123,17 @@
 						</div>
 						<div class="settings__tabs">
 							<div class="settings__tabs-title">Настройки</div>
-							<div class="settings__tab settings__tab--active" data-tab-path="1">Редактировать профиль</div>
-							<div class="settings__tab" data-tab-path="2">Аккаунт</div>
-							<div class="settings__tab" data-tab-path="3">Финансовая информация</div>
+							<div class="settings__tab settings__tab--active" data-tab-path="4">Редактировать профиль</div>
+							<div class="settings__tab" data-tab-path="5">Аккаунт</div>
 						</div>
 					</div>
 				</div>
-				<div class="settings__content settings__content--active" data-content-path="1">
+				<div class="settings__content settings__content--active" data-content-path="4">
 					<h3 class="settings__title">Профиль</h3>
 					<div class="settings__subtitle">Аватар</div>
 					<div class="settings__avatar">
 						<div class="settings__avatar-img">
-							<img src="img/avatar.png" alt="">
+							<img src="img/avatar2.png" alt="">
 						</div>
 						<div class="settings__avatar-desc">
 							<div class="settings__avatar-text">Аватар должен быть в формате .JPG, .JPEG или .PNG и не может превышать 5M.</div>
@@ -147,40 +146,18 @@
 							<span>Имя</span>
 							<input type="text" placeholder="Пожалуйста, введите ваше имя">
 						</fieldset>
-						<fieldset class="form-group settings__form-group">
-							<span>Часовой пояс</span>
-							<input type="text" placeholder="Пожалуйста, выберите часовой пояс">
-						</fieldset>
-						<fieldset class="form-group settings__form-group">
-							<span>Биография</span>
-							<textarea class="settings__form-textarea" placeholder="Напишите краткую биографию, чтобы представить себя"></textarea>
-						</fieldset>
+
 						<fieldset class="form-group settings__form-group">
 							<button class="settings__form-btn">Сохранить</button>
 						</fieldset>
 					</form>
-					<div class="settings__socials">
-						<div class="settings__socials-title">Социальные сети</div>
-						<div class="settings__socials-group form-group">
-							<span>Пожалуйста, вводите ссылку на Discord</span>
-							<input type="text" placeholder="Например, https://discord.com">
-						</div>
-						<div class="settings__socials-group form-group">
-							<span>Пожалуйста, вводите ссылку на YouTube</span>
-							<input type="text" placeholder="Например, https://www.youtube.com">
-						</div>
-						<div class="settings__socials-group form-group">
-							<span>Пожалуйста, вводите ссылку на Twitch</span>
-							<input type="text" placeholder="Например, https://www.twitch.tv">
-						</div>
-					</div>
 					<div class="settings__info">
 						<div class="settings__country">
 							<div class="settings__country-desc">
 								<div class="settings__country-title">Страна</div>
-								<input class="settings__country-text edit-text" data-input-path="1" type="text" value="Украина, Луганск" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';">
+								<input class="settings__country-text edit-text" data-input-path="5" type="text" value="Украина, Луганск" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';">
 							</div>
-							<button class="settings__info-btn" data-btn-path="1">
+							<button class="settings__info-btn" data-btn-path="5">
 								<span>Редактировать</span>
 								<span>Сохранить</span>
 								<i>
@@ -191,9 +168,9 @@
 						<div class="settings__gender">
 							<div class="settings__gender-desc">
 								<div class="settings__gender-title">Пол</div>
-								<input class="settings__gender-text edit-text" data-input-path="2" type="text" value="Мужской" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';">
+								<input class="settings__gender-text edit-text" data-input-path="6" type="text" value="Мужской" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';">
 							</div>
-							<button class="settings__info-btn" data-btn-path="2">
+							<button class="settings__info-btn" data-btn-path="6">
 								<span>Редактировать</span>
 								<span>Сохранить</span>
 								<i>
@@ -204,9 +181,9 @@
 						<div class="settings__age">
 							<div class="settings__age-desc">
 								<div class="settings__age-title">Возраст</div>
-								<input class="settings__age-text edit-text" data-input-path="3" type="text" value="8 апреля,2000" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';">
+								<input class="settings__age-text edit-text" data-input-path="7" type="text" value="8 апреля,2000" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';">
 							</div>
-							<button class="settings__info-btn" data-btn-path="3">
+							<button class="settings__info-btn" data-btn-path="7">
 								<span>Редактировать</span>
 								<span>Сохранить</span>
 								<i>
@@ -216,7 +193,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="settings__content" data-content-path="2">
+				<div class="settings__content" data-content-path="5">
 					<h3 class="settings__title">Аккаунт</h3>
 					<div class="settings__subtitle">Информация аккаунта</div>
 					<div class="settings__info-account">
@@ -245,59 +222,6 @@
 					<div class="settings__delete">
 						<button class="settings__delete-btn">Удалить аккаунт</button>
 						<button class="settings__delete-btn2">Удалить</button>
-					</div>
-				</div>
-				<div class="settings__content" data-content-path="3">
-					<h3 class="settings__title">Финансовая информация</h3>
-					<div class="settings__subtitle">Платёжные данные</div>
-					<div class="settings__financial">
-						<div class="settings__card">
-							<div class="settings__card-title">Номер карты</div>
-							<div class="settings__card-text">2365 2354 9856 3601</div>
-						</div>
-						<div class="settings__yoomoney">
-							<div class="settings__yoomoney-title">Yoomoney</div>
-							<div class="settings__yoomoney-text">41003659721456987</div>
-						</div>
-						<div class="settings__financial-info">
-							Выплаты будут осуществляться только по указанным реквизитам. Если вы хотите изменить
-							платёжные данные просим обратиться в нашу службу поддержки <a href="">support@e-play.com</a>
-						</div>
-					</div>
-					<div class="settings__confirmation">
-						<div class="settings__confirmation-form">
-							<div class="settings__confirmation-desc">
-								Для подтверждения плтаёжных данных требуется сделать селфи с лицевой стороной карты на фоне данной страницы. Фотография должна быть в формате .JPG, .JPEG или .PNG и не может превышать 5M.
-							</div>
-							<div class="settings__confirmation-card">
-								<div class="settings__confirmation-title">Номер карты</div>
-								<div class="settings__confirmation-input form-group">
-									<input type="text" placeholder="Пожалуйста, введите номер карты">
-								</div>
-								<div class="settings__confirmation-file">
-									<input type="file" id="review-file" accept="image/* name="photo">
-									<label>+ Прикрепить фото</label>
-								</div>
-							</div>
-							<div class="settings__confirmation-desc">
-								Для подтверждения плтаёжных данных требуется сделать селфи с лицевой стороной карты на фоне данной страницы. Фотография должна быть в формате .JPG, .JPEG или .PNG и не может превышать 5M.
-							</div>
-							<div class="settings__confirmation-yoomoney">
-								<div class="settings__confirmation-title">Yoomoney</div>
-								<div class="settings__confirmation-input form-group">
-									<input type="text" placeholder="Пожалуйста, введите номер Yoomoney">
-								</div>
-								<div class="settings__confirmation-file">
-									<input type="file">
-									<label>+ Прикрепить фото</label>
-								</div>
-							</div>
-							<div class="settings__financial-info">
-								Выплаты будут осуществляться только по указанным реквизитам. Если вы хотите изменить
-								платёжные данные просим обратиться в нашу службу поддержки <a href="">support@e-play.com</a>
-							</div>
-							<button class="settings__confirmation-btn">Сохранить</button>
-						</div>
 					</div>
 				</div>
 			</div>
