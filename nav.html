@@ -25,9 +25,16 @@
 				<li><a href="settings.html">Настройки аккаунта продавца</a></li>
 				<li><a href="settings2.html">Настройки аккаунта покупателя</a></li>
 				<li><a href="public-page.html">Страница для неавторизованных пользователей</a></li>
+				<li><a href="public-page2.html">Страница для неавторизованных пользователей 2</a></li>
+				<li><a href="public-page3.html">Страница для неавторизованных пользователей 3</a></li>
+				<li><a href="sellers-page.html">Страница продавца</a></li>
 			</ul>
 
 			<button class="navigation__btn btn-violet" data-modal="contactModal">Модальное окно</button>
+			<button class="navigation__btn btn-violet" data-modal="contactModal2">Модальное окно 2</button>
+			<button class="navigation__btn btn-violet" data-modal="contactModal3">Модальное окно 3</button>
+			<button class="navigation__btn btn-violet" data-modal="contactModal4">Модальное окно 4</button>
+			<button class="navigation__btn btn-violet" data-modal="contactModal5">Модальное окно 5</button>
 		</div>
 	</nav>
 
@@ -44,6 +51,152 @@
 				<div class="modal__desc">
 					<h3 class="modal__title">Спасибо, за добавление услуги</h3>
 					<div class="modal__text">Ваша заявка отправлена на модерацию. В течение 24 часов услуги появятся в вашем личном кабинете</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="contactModal2">
+		<div class="modal__dialog modal__dialog2">
+			<h3 class="modal__title2 display3">Выберите способ оплаты</h3>
+			<button type="button" class="_close-modal modal__close modal__close2" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/authorization-close.svg" alt="">
+			</button>
+			<form class="modal__form">
+				<fieldset class="modal__form-group">
+					<div class="modal__form-checkeds">
+						<div class="modal__form-chequed">
+							<input type="radio" name="card">
+							<label>
+								<img src="img/card.png" alt="">
+							</label>
+						</div>
+						<div class="modal__form-chequed">
+							<input type="radio" name="card">
+							<label>
+								<img src="img/card2.svg" alt="">
+							</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="modal__form-group">
+					<div class="modal__form-desc">
+						<p class="modal__form-text">К оплате <span>2400 РУБЛЕЙ</span> на карту MIR, VISA, Master Card</p>
+						<p class="modal__form-text2">На адрес вашей электронной почты будет отправлена ссылка на оплату услуги</p>
+					</div>
+				</fieldset>
+				<fieldset class="modal__form-group">
+					<button class="modal__form-btn btn-violet">Отправить заявку</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="contactModal3">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/authorization-close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__img">
+					<img src="img/modal-img2.webp" alt="">
+				</div>
+				<div class="modal__desc">
+					<h3 class="modal__title">Спасибо за вашу заявку</h3>
+					<div class="modal__text">Пожалуйста проверьте свою электронную почту и следуйте дальнейшим инструкциям</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="contactModal4">
+		<div class="modal__dialog modal__dialog2">
+			<h3 class="modal__title4 display3">Оставить оценку Molika 💋</h3>
+			<div class="modal__subtitle">Укажите на сколько вам понравилось общаться с исполнителем</div>
+			<button type="button" class="_close-modal modal__close modal__close2" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/authorization-close.svg" alt="">
+			</button>
+			<form class="form-rating">
+				<fieldset class="form-rating__group">
+					<div class="rating__title">Отзывчивость</div>
+					<div class="rating rating__set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input class="rating__item" type="radio" value="1" name="rating">
+								<input class="rating__item" type="radio" value="2" name="rating">
+								<input class="rating__item" type="radio" value="3" name="rating">
+								<input class="rating__item" type="radio" value="4" name="rating">
+								<input class="rating__item" type="radio" value="5" name="rating">
+							</div>
+						</div>
+						<div class="rating__value">1</div>
+					</div>
+				</fieldset>
+				<fieldset class="form-rating__group">
+					<div class="rating__title">Мастерство</div>
+					<div class="rating rating__set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input class="rating__item" type="radio" value="1" name="rating2">
+								<input class="rating__item" type="radio" value="2" name="rating2">
+								<input class="rating__item" type="radio" value="3" name="rating2">
+								<input class="rating__item" type="radio" value="4" name="rating2">
+								<input class="rating__item" type="radio" value="5" name="rating2">
+							</div>
+						</div>
+						<div class="rating__value">4</div>
+					</div>
+				</fieldset>
+				<fieldset class="form-rating__group">
+					<div class="rating__title">Дружелюбие</div>
+					<div class="rating rating__set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input class="rating__item" type="radio" value="1" name="rating3">
+								<input class="rating__item" type="radio" value="2" name="rating3">
+								<input class="rating__item" type="radio" value="3" name="rating3">
+								<input class="rating__item" type="radio" value="4" name="rating3">
+								<input class="rating__item" type="radio" value="5" name="rating3">
+							</div>
+						</div>
+						<div class="rating__value">2</div>
+					</div>
+				</fieldset>
+				<fieldset class="form-rating__group">
+					<div class="rating__title">Удовольствие</div>
+					<div class="rating rating__set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input class="rating__item" type="radio" value="1" name="rating4">
+								<input class="rating__item" type="radio" value="2" name="rating4">
+								<input class="rating__item" type="radio" value="3" name="rating4">
+								<input class="rating__item" type="radio" value="4" name="rating4">
+								<input class="rating__item" type="radio" value="5" name="rating4">
+							</div>
+						</div>
+						<div class="rating__value">3</div>
+					</div>
+				</fieldset>
+				<fieldset class="form-rating__group2">
+					<button class="form-rating__btn btn-violet">Оценить</button>
+				</fieldset>
+			</form>
+
+		</div>
+	</div>
+	<div class="modal" id="contactModal5">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/authorization-close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__img modal__img2">
+					<img src="img/modal-img3.webp" alt="">
+				</div>
+				<div class="modal__desc">
+					<h3 class="modal__title">Спасибо за сотрудничество</h3>
+					<div class="modal__text">После проверки ваша оценка будет опубликована на сайте</div>
 				</div>
 			</div>
 		</div>
