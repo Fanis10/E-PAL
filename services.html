@@ -111,7 +111,7 @@
 	<section class="services">
 		<div class="container">
 			<div class="services-quiz">
-				<div class="step _active services-step" data-step="1">
+				<div class="step step--active services-step">
 					<h3 class="services__title display3">Выберите услугу</h3>
 					<div class="services__items">
 						<div class="services__item">
@@ -184,447 +184,537 @@
 							<span class="game" data-content-path="4">VALORANT</span>
 							<span class="game" data-content-path="5">league  legends</span>
 						</div>
+						<button class="next-quiz btn-violet">
+							<span>Дальше</span>
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9482 10.704C10.7553 10.5067 10.6627 10.2683 10.6704 9.98879C10.6788 9.70927 10.7794 9.47085 10.9723 9.27354L13.6968 6.48655H0.964431C0.691176 6.48655 0.461963 6.39184 0.276792 6.20242C0.092264 6.01366 0 5.77952 0 5.5C0 5.22048 0.092264 4.98601 0.276792 4.79659C0.461963 4.60783 0.691176 4.51345 0.964431 4.51345H13.6968L10.9482 1.70179C10.7553 1.50448 10.6589 1.27001 10.6589 0.998385C10.6589 0.727414 10.7553 0.493273 10.9482 0.295964C11.1411 0.0986544 11.3703 0 11.6358 0C11.9007 0 12.1296 0.0986544 12.3225 0.295964L16.7348 4.80942C16.8312 4.90807 16.8997 5.01495 16.9402 5.13004C16.9801 5.24514 17 5.36846 17 5.5C17 5.63154 16.9801 5.75486 16.9402 5.86995C16.8997 5.98505 16.8312 6.09193 16.7348 6.19058L12.2984 10.7287C12.1216 10.9096 11.9007 11 11.6358 11C11.3703 11 11.1411 10.9013 10.9482 10.704Z" fill="white"/>
+								</svg>
+							</i>
+						</button>
 					</div>
 				</div>
-				<div class="step services-step2" data-step="2">
-					<h2 class="services-step3 display2 game" data-content-path="1">CS:GO</h2>
-					<h2 class="services-step3 display2 game game--active" data-content-path="2">DOTA 2</h2>
-					<h2 class="services-step3 display2 game" data-content-path="3">PUBG</h2>
-					<h2 class="services-step3 display2 game" data-content-path="4">VALORANT</h2>
-					<h2 class="services-step3 display2 game" data-content-path="5">league  legends</h2>
-					<div class="services-step2__info">
-						<div class="services-step2__subtitle">Информация о игре</div>
-						<div class="services-step2__items">
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Платформа</div>
-								<select data-placeholder="Пожалуйста, выберите платформу" class="form-control" multiple="multiple">
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-								</select>
+				<div class="step services-step2">
+					<div class="services-step__wrapp">
+						<div class="services-step__top">
+							<h2 class="display2 game" data-content-path="1">CS:GO</h2>
+							<h2 class="display2 game game--active" data-content-path="2">DOTA 2</h2>
+							<h2 class="display2 game" data-content-path="3">PUBG</h2>
+							<h2 class="display2 game" data-content-path="4">VALORANT</h2>
+							<h2 class="display2 game" data-content-path="5">league  legends</h2>
+							<div class="progressbar">
+								<div class="progress"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step progress-step--active"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step"></div>
 							</div>
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Сервер</div>
-								<select data-placeholder="Пожалуйста, выберите сервер" class="form-control" multiple="multiple">
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-								</select>
-							</div>
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Ранг</div>
-								<select data-placeholder="Пожалуйста, выберите ранг" class="form-control" multiple="multiple">
-									<option>Бронзовый</option>
-									<option>Серебряный</option>
-									<option>Золотой</option>
-									<option>Платиновый</option>
-									<option>Алмазный</option>
-								</select>
-							</div>
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Позиция</div>
-								<select data-placeholder="Пожалуйста, выберите позицию" class="form-control" multiple="multiple">
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-								</select>
-							</div>
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Стиль</div>
-								<select data-placeholder="Пожалуйста, выберите стиль" class="form-control" multiple="multiple">
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-									<option>PS4</option>
-									<option>PS5</option>
-									<option>Xbox</option>
-									<option>PS</option>
-								</select>
-							</div>
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Навыки</div>
-								<div class="services-step2__file">
-									<div class="services-step2__file-input">
-										<input type="file">
-										<label>
-											<img src="img/file-input.svg" alt="">
-											<span>Нажмите здесь, чтобы загрузить</span>
-										</label>
-									</div>
-									<div class="services-step2__file-desc">
-										Загружайте скриншоты своих игр/сервисов,
-										чтобы продемонстрировать свои навыки
+						</div>
+						<div class="services-step2__info">
+							<div class="services-step2__subtitle">Информация о игре</div>
+							<div class="services-step2__items">
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Платформа</div>
+									<select data-placeholder="Пожалуйста, выберите платформу" class="form-control" multiple="multiple">
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+									</select>
+								</div>
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Сервер</div>
+									<select data-placeholder="Пожалуйста, выберите сервер" class="form-control" multiple="multiple">
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+									</select>
+								</div>
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Ранг</div>
+									<select data-placeholder="Пожалуйста, выберите ранг" class="form-control" multiple="multiple">
+										<option>Бронзовый</option>
+										<option>Серебряный</option>
+										<option>Золотой</option>
+										<option>Платиновый</option>
+										<option>Алмазный</option>
+									</select>
+								</div>
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Позиция</div>
+									<select data-placeholder="Пожалуйста, выберите позицию" class="form-control" multiple="multiple">
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+									</select>
+								</div>
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Стиль</div>
+									<select data-placeholder="Пожалуйста, выберите стиль" class="form-control" multiple="multiple">
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+										<option>PS4</option>
+										<option>PS5</option>
+										<option>Xbox</option>
+										<option>PS</option>
+									</select>
+								</div>
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Навыки</div>
+									<div class="services-step2__file">
+										<div class="services-step2__file-input">
+											<input type="file">
+											<label>
+												<img src="img/file-input.svg" alt="">
+												<span>Нажмите здесь, чтобы загрузить</span>
+											</label>
+										</div>
+										<div class="services-step2__file-desc">
+											Загружайте скриншоты своих игр/сервисов,
+											чтобы продемонстрировать свои навыки
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="services-quiz__btns">
+						<button class="prev-quiz">
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.05181 0.295963C6.24469 0.493273 6.33728 0.731689 6.32956 1.01121C6.32121 1.29073 6.22058 1.52915 6.0277 1.72646L3.30318 4.51345L16.0356 4.51345C16.3088 4.51345 16.538 4.60816 16.7232 4.79758C16.9077 4.98634 17 5.22048 17 5.5C17 5.77952 16.9077 6.01399 16.7232 6.20341C16.538 6.39217 16.3088 6.48655 16.0356 6.48655L3.30318 6.48655L6.05181 9.29821C6.24469 9.49552 6.34114 9.72998 6.34114 10.0016C6.34114 10.2726 6.24469 10.5067 6.05181 10.704C5.85892 10.9013 5.62971 11 5.36417 11C5.09927 11 4.87038 10.9013 4.67749 10.704L0.265219 6.19058C0.168776 6.09193 0.100302 5.98505 0.0597958 5.86995C0.0199323 5.75486 4.69326e-07 5.63154 4.80825e-07 5.5C4.92325e-07 5.36846 0.0199323 5.24514 0.0597959 5.13004C0.100302 5.01495 0.168776 4.90807 0.265219 4.80942L4.7016 0.2713C4.87842 0.090433 5.09927 -1.04039e-06 5.36417 -1.01724e-06C5.62971 -9.94023e-07 5.85892 0.0986538 6.05181 0.295963Z" fill="white"/>
+								</svg>
+							</i>
+							<span>Назад</span>
+						</button>
+						<button class="next-quiz btn-violet">
+							<span>Дальше</span>
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9482 10.704C10.7553 10.5067 10.6627 10.2683 10.6704 9.98879C10.6788 9.70927 10.7794 9.47085 10.9723 9.27354L13.6968 6.48655H0.964431C0.691176 6.48655 0.461963 6.39184 0.276792 6.20242C0.092264 6.01366 0 5.77952 0 5.5C0 5.22048 0.092264 4.98601 0.276792 4.79659C0.461963 4.60783 0.691176 4.51345 0.964431 4.51345H13.6968L10.9482 1.70179C10.7553 1.50448 10.6589 1.27001 10.6589 0.998385C10.6589 0.727414 10.7553 0.493273 10.9482 0.295964C11.1411 0.0986544 11.3703 0 11.6358 0C11.9007 0 12.1296 0.0986544 12.3225 0.295964L16.7348 4.80942C16.8312 4.90807 16.8997 5.01495 16.9402 5.13004C16.9801 5.24514 17 5.36846 17 5.5C17 5.63154 16.9801 5.75486 16.9402 5.86995C16.8997 5.98505 16.8312 6.09193 16.7348 6.19058L12.2984 10.7287C12.1216 10.9096 11.9007 11 11.6358 11C11.3703 11 11.1411 10.9013 10.9482 10.704Z" fill="white"/>
+								</svg>
+							</i>
+						</button>
+					</div>
 				</div>
-				<div class="step services-step3" data-step="3">
-					<h2 class="services-step3 display2 game" data-content-path="1">CS:GO</h2>
-					<h2 class="services-step3 display2 game game--active" data-content-path="2">DOTA 2</h2>
-					<h2 class="services-step3 display2 game" data-content-path="3">PUBG</h2>
-					<h2 class="services-step3 display2 game" data-content-path="4">VALORANT</h2>
-					<h2 class="services-step3 display2 game" data-content-path="5">league  legends</h2>
-					<div class="services-step3__info">
-						<div class="services-step3__subtitle">Биография</div>
-						<div class="services-step3__items">
-							<div class="services-step3__item">
-								<div class="services-step3__item-subtitle">Обложка вступление</div>
-								<textarea class="services-step3__textarea2" placeholder="Это предложение будет отображаться в списке e-play. Минимум 10 символов"></textarea>
-								<div class="services-step3__item-info">Use an eye-catching one-liner to gain potential clients</div>
+				<div class="step services-step3">
+					<div class="services-step__wrapp">
+						<div class="services-step__top">
+							<h2 class="services-step3 display2 game" data-content-path="1">CS:GO</h2>
+							<h2 class="services-step3 display2 game game--active" data-content-path="2">DOTA 2</h2>
+							<h2 class="services-step3 display2 game" data-content-path="3">PUBG</h2>
+							<h2 class="services-step3 display2 game" data-content-path="4">VALORANT</h2>
+							<h2 class="services-step3 display2 game" data-content-path="5">league  legends</h2>
+							<div class="progressbar">
+								<div class="progress"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step progress-step--active"></div>
+								<div class="progress-step"></div>
 							</div>
-							<div class="services-step3__item">
-								<div class="services-step3__item-subtitle">Обложка вступление</div>
-								<textarea maxlength="500" class="services-step3__textarea textarea" placeholder="Например:
+						</div>
+						<div class="services-step3__info">
+							<div class="services-step3__subtitle">Биография</div>
+							<div class="services-step3__items">
+								<div class="services-step3__item">
+									<div class="services-step3__item-subtitle">Обложка вступление</div>
+									<textarea class="services-step3__textarea2" placeholder="Это предложение будет отображаться в списке e-play. Минимум 10 символов"></textarea>
+									<div class="services-step3__item-info">Use an eye-catching one-liner to gain potential clients</div>
+								</div>
+								<div class="services-step3__item">
+									<div class="services-step3__item-subtitle">Обложка вступление</div>
+									<textarea maxlength="500" class="services-step3__textarea textarea" placeholder="Например:
 [LoL] Я бог в Лиге, 1 бесплатный заказ для вас, если вы победите меня в одиночку в середине"></textarea>
+									<div class="services-step3__symbols">
+										<span class="result">0</span>
+										<span>/500</span>
+									</div>
+								</div>
+								<div class="services-step2__item">
+									<div class="services-step2__item-subtitle">Навыки</div>
+									<div class="services-step2__file">
+										<div class="services-step2__file-input">
+											<input type="file">
+											<label>
+												<img src="img/file-input.svg" alt="">
+												<span>Нажмите здесь, чтобы загрузить</span>
+											</label>
+										</div>
+										<div class="services-step2__file-desc">
+											Загружайте скриншоты своих игр/сервисов,
+											чтобы продемонстрировать свои навыки
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services-quiz__btns">
+						<button class="prev-quiz">
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.05181 0.295963C6.24469 0.493273 6.33728 0.731689 6.32956 1.01121C6.32121 1.29073 6.22058 1.52915 6.0277 1.72646L3.30318 4.51345L16.0356 4.51345C16.3088 4.51345 16.538 4.60816 16.7232 4.79758C16.9077 4.98634 17 5.22048 17 5.5C17 5.77952 16.9077 6.01399 16.7232 6.20341C16.538 6.39217 16.3088 6.48655 16.0356 6.48655L3.30318 6.48655L6.05181 9.29821C6.24469 9.49552 6.34114 9.72998 6.34114 10.0016C6.34114 10.2726 6.24469 10.5067 6.05181 10.704C5.85892 10.9013 5.62971 11 5.36417 11C5.09927 11 4.87038 10.9013 4.67749 10.704L0.265219 6.19058C0.168776 6.09193 0.100302 5.98505 0.0597958 5.86995C0.0199323 5.75486 4.69326e-07 5.63154 4.80825e-07 5.5C4.92325e-07 5.36846 0.0199323 5.24514 0.0597959 5.13004C0.100302 5.01495 0.168776 4.90807 0.265219 4.80942L4.7016 0.2713C4.87842 0.090433 5.09927 -1.04039e-06 5.36417 -1.01724e-06C5.62971 -9.94023e-07 5.85892 0.0986538 6.05181 0.295963Z" fill="white"/>
+								</svg>
+							</i>
+							<span>Назад</span>
+						</button>
+						<button class="next-quiz btn-violet">
+							<span>Дальше</span>
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9482 10.704C10.7553 10.5067 10.6627 10.2683 10.6704 9.98879C10.6788 9.70927 10.7794 9.47085 10.9723 9.27354L13.6968 6.48655H0.964431C0.691176 6.48655 0.461963 6.39184 0.276792 6.20242C0.092264 6.01366 0 5.77952 0 5.5C0 5.22048 0.092264 4.98601 0.276792 4.79659C0.461963 4.60783 0.691176 4.51345 0.964431 4.51345H13.6968L10.9482 1.70179C10.7553 1.50448 10.6589 1.27001 10.6589 0.998385C10.6589 0.727414 10.7553 0.493273 10.9482 0.295964C11.1411 0.0986544 11.3703 0 11.6358 0C11.9007 0 12.1296 0.0986544 12.3225 0.295964L16.7348 4.80942C16.8312 4.90807 16.8997 5.01495 16.9402 5.13004C16.9801 5.24514 17 5.36846 17 5.5C17 5.63154 16.9801 5.75486 16.9402 5.86995C16.8997 5.98505 16.8312 6.09193 16.7348 6.19058L12.2984 10.7287C12.1216 10.9096 11.9007 11 11.6358 11C11.3703 11 11.1411 10.9013 10.9482 10.704Z" fill="white"/>
+								</svg>
+							</i>
+						</button>
+					</div>
+				</div>
+				<div class="step services-step4">
+					<div class="services-step__wrapp">
+						<div class="services-step__top">
+							<h2 class="services-step3 display2 game" data-content-path="1">CS:GO</h2>
+							<h2 class="services-step3 display2 game game--active" data-content-path="2">DOTA 2</h2>
+							<h2 class="services-step3 display2 game" data-content-path="3">PUBG</h2>
+							<h2 class="services-step3 display2 game" data-content-path="4">VALORANT</h2>
+							<h2 class="services-step3 display2 game" data-content-path="5">league  legends</h2>
+							<div class="progressbar">
+								<div class="progress"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step"></div>
+								<div class="progress-step progress-step--active"></div>
+							</div>
+						</div>
+						<div class="services-step4__info">
+							<div class="services-step4__top">
+								<div class="services-step4__subtitle">Тип услуги 1</div>
+								<div class="services-step4__close">
+									<img src="img/authorization-close.svg" alt="">
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Название</div>
+								<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
 								<div class="services-step3__symbols">
-									<span class="result">0</span>
+									<span class="result2">0</span>
 									<span>/500</span>
 								</div>
 							</div>
-							<div class="services-step2__item">
-								<div class="services-step2__item-subtitle">Навыки</div>
-								<div class="services-step2__file">
-									<div class="services-step2__file-input">
-										<input type="file">
-										<label>
-											<img src="img/file-input.svg" alt="">
-											<span>Нажмите здесь, чтобы загрузить</span>
-										</label>
-									</div>
-									<div class="services-step2__file-desc">
-										Загружайте скриншоты своих игр/сервисов,
-										чтобы продемонстрировать свои навыки
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Цена</div>
+								<div class="services-step4__item-flex">
+									<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
+									<div class="services-step4__select custom_select">
+										<select>
+											<option value="/Игра">/Игра</option>
+											<option value="/Игра2">/Игра2</option>
+											<option value="/Игра3">/Игра3</option>
+											<option value="/Игра4">/Игра4</option>
+										</select>
 									</div>
 								</div>
 							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-flex2">
+									<div class="services-step4__item-subtitle check-title">Настройка акции</div>
+									<div class="services-step4__check">
+										<input class="check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="services-step4__select2 custom_select">
+									<select>
+										<option value="/Игра">Первый заказ бесплатно</option>
+										<option value="/Игра2">Первый заказ бесплатно</option>
+										<option value="/Игра3">Первый заказ бесплатно</option>
+										<option value="/Игра4">Первый заказ бесплатно</option>
+									</select>
+								</div>
+							</div>
 						</div>
+						<div class="services-step4__info">
+							<div class="services-step4__top">
+								<div class="services-step4__subtitle">Тип услуги 1</div>
+								<div class="services-step4__close">
+									<img src="img/authorization-close.svg" alt="">
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Название</div>
+								<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
+								<div class="services-step3__symbols">
+									<span class="result2">0</span>
+									<span>/500</span>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Цена</div>
+								<div class="services-step4__item-flex">
+									<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
+									<div class="services-step4__select custom_select">
+										<select>
+											<option value="/Игра">/Игра</option>
+											<option value="/Игра2">/Игра2</option>
+											<option value="/Игра3">/Игра3</option>
+											<option value="/Игра4">/Игра4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-flex2">
+									<div class="services-step4__item-subtitle check-title">Настройка акции</div>
+									<div class="services-step4__check">
+										<input class="check" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services-step4__info">
+							<div class="services-step4__top">
+								<div class="services-step4__subtitle">Тип услуги 1</div>
+								<div class="services-step4__close">
+									<img src="img/authorization-close.svg" alt="">
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Название</div>
+								<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
+								<div class="services-step3__symbols">
+									<span class="result2">0</span>
+									<span>/500</span>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Цена</div>
+								<div class="services-step4__item-flex">
+									<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
+									<div class="services-step4__select custom_select">
+										<select>
+											<option value="/Игра">/Игра</option>
+											<option value="/Игра2">/Игра2</option>
+											<option value="/Игра3">/Игра3</option>
+											<option value="/Игра4">/Игра4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-flex2">
+									<div class="services-step4__item-subtitle check-title">Настройка акции</div>
+									<div class="services-step4__check">
+										<input class="check2" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="services-step4__select3 custom_select">
+									<select>
+										<option value="/Игра">Первый заказ бесплатно</option>
+										<option value="/Игра2">Первый заказ бесплатно</option>
+										<option value="/Игра3">Первый заказ бесплатно</option>
+										<option value="/Игра4">Первый заказ бесплатно</option>
+									</select>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-input">
+									<input type="text">
+									<span>/в день</span>
+								</div>
+								<div class="services-step4__item-desc">Для наращивания клиентской базы вам необходимо предоставлять одинаково качественные услуги и время отклика независимо от того, платный заказ или бесплатный. Если вы получите три штрафа за задержку ответа в течение 24 часов, ваш первый бесплатный заказ будет отключен на 72 часа.</div>
+							</div>
+							<div class="services-step4__item services-step4__price-flex ">
+								<div class="services-step4__price-title">Итоговая стоимость</div>
+								<div class="services-step4__price-desc">
+									<i>
+										<img src="img/price-icon.svg" alt="">
+									</i>
+									<div class="services-step4__price-numbers">0<span>/Игра</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="services-step4__info">
+							<div class="services-step4__top">
+								<div class="services-step4__subtitle">Тип услуги 1</div>
+								<div class="services-step4__close">
+									<img src="img/authorization-close.svg" alt="">
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Название</div>
+								<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
+								<div class="services-step3__symbols">
+									<span class="result2">0</span>
+									<span>/500</span>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Цена</div>
+								<div class="services-step4__item-flex">
+									<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
+									<div class="services-step4__select custom_select">
+										<select>
+											<option value="/Игра">/Игра</option>
+											<option value="/Игра2">/Игра2</option>
+											<option value="/Игра3">/Игра3</option>
+											<option value="/Игра4">/Игра4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-flex2">
+									<div class="services-step4__item-subtitle check-title">Настройка акции</div>
+									<div class="services-step4__check">
+										<input class="check3" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="services-step4__select4 custom_select">
+									<select>
+										<option value="/Игра">Скидка</option>
+										<option value="/Игра2">Скидка</option>
+										<option value="/Игра3">Скидка</option>
+										<option value="/Игра4">Скидка</option>
+									</select>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Размер скидки</div>
+								<div class="services-step4__select4 custom_select">
+									<select>
+										<option value="/Игра">-10%</option>
+										<option value="/Игра2">-10%</option>
+										<option value="/Игра3">-10%</option>
+										<option value="/Игра4">-10%</option>
+									</select>
+								</div>
+							</div>
+							<div class="services-step4__item services-step4__price-flex ">
+								<div class="services-step4__price-title">Итоговая стоимость</div>
+								<div class="services-step4__price-desc">
+									<i>
+										<img src="img/price-icon.svg" alt="">
+									</i>
+									<div class="services-step4__price-numbers">900<span>/Игра</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="services-step4__info">
+							<div class="services-step4__top">
+								<div class="services-step4__subtitle">Тип услуги 1</div>
+								<div class="services-step4__close">
+									<img src="img/authorization-close.svg" alt="">
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Название</div>
+								<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
+								<div class="services-step3__symbols">
+									<span class="result2">0</span>
+									<span>/500</span>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Цена</div>
+								<div class="services-step4__item-flex">
+									<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
+									<div class="services-step4__select custom_select">
+										<select>
+											<option value="/Игра">/Игра</option>
+											<option value="/Игра2">/Игра2</option>
+											<option value="/Игра3">/Игра3</option>
+											<option value="/Игра4">/Игра4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-flex2">
+									<div class="services-step4__item-subtitle check-title">Настройка акции</div>
+									<div class="services-step4__check">
+										<input class="check3" type="checkbox">
+										<label></label>
+									</div>
+								</div>
+								<div class="services-step4__select4 custom_select">
+									<select>
+										<option value="/Игра">Купи X получи Y бесплатно</option>
+										<option value="/Игра2">Купи X получи Y бесплатно</option>
+										<option value="/Игра3">Купи X получи Y бесплатно</option>
+										<option value="/Игра4">Купи X получи Y бесплатно</option>
+									</select>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Купи X</div>
+								<div class="services-step4__select4 custom_select">
+									<select>
+										<option value="/Игра">1</option>
+										<option value="/Игра2">2</option>
+										<option value="/Игра3">3</option>
+										<option value="/Игра4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="services-step4__item">
+								<div class="services-step4__item-subtitle">Купи Y</div>
+								<div class="services-step4__select4 custom_select">
+									<select>
+										<option value="/Игра">1</option>
+										<option value="/Игра2">2</option>
+										<option value="/Игра3">3</option>
+										<option value="/Игра4">4</option>
+									</select>
+								</div>
+							</div>
+							<div class="services-step4__item services-step4__price-flex ">
+								<div class="services-step4__price-title">Итоговая стоимость</div>
+								<div class="services-step4__price-desc">
+									<i>
+										<img src="img/price-icon.svg" alt="">
+									</i>
+									<div class="services-step4__price-numbers">1000<span>/Игра</span></div>
+								</div>
+							</div>
+						</div>
+						<button class="services-step4__btn">+ Добавить больше типов услуг</button>
+					</div>
+					<div class="services-quiz__btns">
+						<button class="prev-quiz">
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.05181 0.295963C6.24469 0.493273 6.33728 0.731689 6.32956 1.01121C6.32121 1.29073 6.22058 1.52915 6.0277 1.72646L3.30318 4.51345L16.0356 4.51345C16.3088 4.51345 16.538 4.60816 16.7232 4.79758C16.9077 4.98634 17 5.22048 17 5.5C17 5.77952 16.9077 6.01399 16.7232 6.20341C16.538 6.39217 16.3088 6.48655 16.0356 6.48655L3.30318 6.48655L6.05181 9.29821C6.24469 9.49552 6.34114 9.72998 6.34114 10.0016C6.34114 10.2726 6.24469 10.5067 6.05181 10.704C5.85892 10.9013 5.62971 11 5.36417 11C5.09927 11 4.87038 10.9013 4.67749 10.704L0.265219 6.19058C0.168776 6.09193 0.100302 5.98505 0.0597958 5.86995C0.0199323 5.75486 4.69326e-07 5.63154 4.80825e-07 5.5C4.92325e-07 5.36846 0.0199323 5.24514 0.0597959 5.13004C0.100302 5.01495 0.168776 4.90807 0.265219 4.80942L4.7016 0.2713C4.87842 0.090433 5.09927 -1.04039e-06 5.36417 -1.01724e-06C5.62971 -9.94023e-07 5.85892 0.0986538 6.05181 0.295963Z" fill="white"/>
+								</svg>
+							</i>
+							<span>Назад</span>
+						</button>
+						<button class="next-quiz2 btn-violet">
+							<span>Дальше</span>
+							<i>
+								<svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9482 10.704C10.7553 10.5067 10.6627 10.2683 10.6704 9.98879C10.6788 9.70927 10.7794 9.47085 10.9723 9.27354L13.6968 6.48655H0.964431C0.691176 6.48655 0.461963 6.39184 0.276792 6.20242C0.092264 6.01366 0 5.77952 0 5.5C0 5.22048 0.092264 4.98601 0.276792 4.79659C0.461963 4.60783 0.691176 4.51345 0.964431 4.51345H13.6968L10.9482 1.70179C10.7553 1.50448 10.6589 1.27001 10.6589 0.998385C10.6589 0.727414 10.7553 0.493273 10.9482 0.295964C11.1411 0.0986544 11.3703 0 11.6358 0C11.9007 0 12.1296 0.0986544 12.3225 0.295964L16.7348 4.80942C16.8312 4.90807 16.8997 5.01495 16.9402 5.13004C16.9801 5.24514 17 5.36846 17 5.5C17 5.63154 16.9801 5.75486 16.9402 5.86995C16.8997 5.98505 16.8312 6.09193 16.7348 6.19058L12.2984 10.7287C12.1216 10.9096 11.9007 11 11.6358 11C11.3703 11 11.1411 10.9013 10.9482 10.704Z" fill="white"/>
+								</svg>
+							</i>
+						</button>
 					</div>
 				</div>
-				<div class="step services-step4" data-step="4">
-					<h2 class="services-step3 display2 game" data-content-path="1">CS:GO</h2>
-					<h2 class="services-step3 display2 game game--active" data-content-path="2">DOTA 2</h2>
-					<h2 class="services-step3 display2 game" data-content-path="3">PUBG</h2>
-					<h2 class="services-step3 display2 game" data-content-path="4">VALORANT</h2>
-					<h2 class="services-step3 display2 game" data-content-path="5">league  legends</h2>
-					<div class="services-step4__info">
-						<div class="services-step4__top">
-							<div class="services-step4__subtitle">Тип услуги 1</div>
-							<div class="services-step4__close">
-								<img src="img/authorization-close.svg" alt="">
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Название</div>
-							<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
-							<div class="services-step3__symbols">
-								<span class="result2">0</span>
-								<span>/500</span>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Цена</div>
-							<div class="services-step4__item-flex">
-								<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
-								<div class="services-step4__select custom_select">
-									<select>
-										<option value="/Игра">/Игра</option>
-										<option value="/Игра2">/Игра2</option>
-										<option value="/Игра3">/Игра3</option>
-										<option value="/Игра4">/Игра4</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-flex2">
-								<div class="services-step4__item-subtitle check-title">Настройка акции</div>
-								<div class="services-step4__check">
-									<input class="check" type="checkbox">
-									<label></label>
-								</div>
-							</div>
-							<div class="services-step4__select2 custom_select">
-								<select>
-									<option value="/Игра">Первый заказ бесплатно</option>
-									<option value="/Игра2">Первый заказ бесплатно</option>
-									<option value="/Игра3">Первый заказ бесплатно</option>
-									<option value="/Игра4">Первый заказ бесплатно</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="services-step4__info">
-						<div class="services-step4__top">
-							<div class="services-step4__subtitle">Тип услуги 1</div>
-							<div class="services-step4__close">
-								<img src="img/authorization-close.svg" alt="">
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Название</div>
-							<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
-							<div class="services-step3__symbols">
-								<span class="result2">0</span>
-								<span>/500</span>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Цена</div>
-							<div class="services-step4__item-flex">
-								<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
-								<div class="services-step4__select custom_select">
-									<select>
-										<option value="/Игра">/Игра</option>
-										<option value="/Игра2">/Игра2</option>
-										<option value="/Игра3">/Игра3</option>
-										<option value="/Игра4">/Игра4</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-flex2">
-								<div class="services-step4__item-subtitle check-title">Настройка акции</div>
-								<div class="services-step4__check">
-									<input class="check" type="checkbox">
-									<label></label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="services-step4__info">
-						<div class="services-step4__top">
-							<div class="services-step4__subtitle">Тип услуги 1</div>
-							<div class="services-step4__close">
-								<img src="img/authorization-close.svg" alt="">
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Название</div>
-							<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
-							<div class="services-step3__symbols">
-								<span class="result2">0</span>
-								<span>/500</span>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Цена</div>
-							<div class="services-step4__item-flex">
-								<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
-								<div class="services-step4__select custom_select">
-									<select>
-										<option value="/Игра">/Игра</option>
-										<option value="/Игра2">/Игра2</option>
-										<option value="/Игра3">/Игра3</option>
-										<option value="/Игра4">/Игра4</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-flex2">
-								<div class="services-step4__item-subtitle check-title">Настройка акции</div>
-								<div class="services-step4__check">
-									<input class="check2" type="checkbox">
-									<label></label>
-								</div>
-							</div>
-							<div class="services-step4__select3 custom_select">
-								<select>
-									<option value="/Игра">Первый заказ бесплатно</option>
-									<option value="/Игра2">Первый заказ бесплатно</option>
-									<option value="/Игра3">Первый заказ бесплатно</option>
-									<option value="/Игра4">Первый заказ бесплатно</option>
-								</select>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-input">
-								<input type="text">
-								<span>/в день</span>
-							</div>
-							<div class="services-step4__item-desc">Для наращивания клиентской базы вам необходимо предоставлять одинаково качественные услуги и время отклика независимо от того, платный заказ или бесплатный. Если вы получите три штрафа за задержку ответа в течение 24 часов, ваш первый бесплатный заказ будет отключен на 72 часа.</div>
-						</div>
-						<div class="services-step4__item services-step4__price-flex ">
-							<div class="services-step4__price-title">Итоговая стоимость</div>
-							<div class="services-step4__price-desc">
-								<i>
-									<img src="img/price-icon.svg" alt="">
-								</i>
-								<div class="services-step4__price-numbers">0<span>/Игра</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="services-step4__info">
-						<div class="services-step4__top">
-							<div class="services-step4__subtitle">Тип услуги 1</div>
-							<div class="services-step4__close">
-								<img src="img/authorization-close.svg" alt="">
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Название</div>
-							<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
-							<div class="services-step3__symbols">
-								<span class="result2">0</span>
-								<span>/500</span>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Цена</div>
-							<div class="services-step4__item-flex">
-								<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
-								<div class="services-step4__select custom_select">
-									<select>
-										<option value="/Игра">/Игра</option>
-										<option value="/Игра2">/Игра2</option>
-										<option value="/Игра3">/Игра3</option>
-										<option value="/Игра4">/Игра4</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-flex2">
-								<div class="services-step4__item-subtitle check-title">Настройка акции</div>
-								<div class="services-step4__check">
-									<input class="check3" type="checkbox">
-									<label></label>
-								</div>
-							</div>
-							<div class="services-step4__select4 custom_select">
-								<select>
-									<option value="/Игра">Скидка</option>
-									<option value="/Игра2">Скидка</option>
-									<option value="/Игра3">Скидка</option>
-									<option value="/Игра4">Скидка</option>
-								</select>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Размер скидки</div>
-							<div class="services-step4__select4 custom_select">
-								<select>
-									<option value="/Игра">-10%</option>
-									<option value="/Игра2">-10%</option>
-									<option value="/Игра3">-10%</option>
-									<option value="/Игра4">-10%</option>
-								</select>
-							</div>
-						</div>
-						<div class="services-step4__item services-step4__price-flex ">
-							<div class="services-step4__price-title">Итоговая стоимость</div>
-							<div class="services-step4__price-desc">
-								<i>
-									<img src="img/price-icon.svg" alt="">
-								</i>
-								<div class="services-step4__price-numbers">900<span>/Игра</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="services-step4__info">
-						<div class="services-step4__top">
-							<div class="services-step4__subtitle">Тип услуги 1</div>
-							<div class="services-step4__close">
-								<img src="img/authorization-close.svg" alt="">
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Название</div>
-							<textarea maxlength="500" class="services-step4__textarea textarea2" placeholder="Например казуальные игры, рейтинговые, тренировочные"></textarea>
-							<div class="services-step3__symbols">
-								<span class="result2">0</span>
-								<span>/500</span>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Цена</div>
-							<div class="services-step4__item-flex">
-								<input class="input-price" type="text" placeholder="Диапазон цен 10 - 9999">
-								<div class="services-step4__select custom_select">
-									<select>
-										<option value="/Игра">/Игра</option>
-										<option value="/Игра2">/Игра2</option>
-										<option value="/Игра3">/Игра3</option>
-										<option value="/Игра4">/Игра4</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-flex2">
-								<div class="services-step4__item-subtitle check-title">Настройка акции</div>
-								<div class="services-step4__check">
-									<input class="check3" type="checkbox">
-									<label></label>
-								</div>
-							</div>
-							<div class="services-step4__select4 custom_select">
-								<select>
-									<option value="/Игра">Купи X получи Y бесплатно</option>
-									<option value="/Игра2">Купи X получи Y бесплатно</option>
-									<option value="/Игра3">Купи X получи Y бесплатно</option>
-									<option value="/Игра4">Купи X получи Y бесплатно</option>
-								</select>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Купи X</div>
-							<div class="services-step4__select4 custom_select">
-								<select>
-									<option value="/Игра">1</option>
-									<option value="/Игра2">2</option>
-									<option value="/Игра3">3</option>
-									<option value="/Игра4">4</option>
-								</select>
-							</div>
-						</div>
-						<div class="services-step4__item">
-							<div class="services-step4__item-subtitle">Купи Y</div>
-							<div class="services-step4__select4 custom_select">
-								<select>
-									<option value="/Игра">1</option>
-									<option value="/Игра2">2</option>
-									<option value="/Игра3">3</option>
-									<option value="/Игра4">4</option>
-								</select>
-							</div>
-						</div>
-						<div class="services-step4__item services-step4__price-flex ">
-							<div class="services-step4__price-title">Итоговая стоимость</div>
-							<div class="services-step4__price-desc">
-								<i>
-									<img src="img/price-icon.svg" alt="">
-								</i>
-								<div class="services-step4__price-numbers">1000<span>/Игра</span></div>
-							</div>
-						</div>
-					</div>
-
-					<button class="services-step4__btn">+ Добавить больше типов услуг</button>
-				</div>
-			</div>
-			<div class="services-quiz__btns">
-				<button class="quiz-footer__back _prev-quiz">Назад</button>
-				<button class="quiz-footer__next _next-quiz m-btn m-btn-primary">Дальше</button>
 			</div>
 		</div>
 	</section>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>История заказов покупателя</title>
+</head>
+
+
+<body>
+	<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__left">
+                <a class="header__logo" href="">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a class="header__play" href="">Играть</a>
+                <div class="header__item">
+                    <div class="header__item-show">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__item-hidden">
+                        <div class="header__hidden-close">
+                            <img src="img/authorization-close.svg" alt="">
+                        </div>
+                        <div class="header__hidden-inner">
+                            <nav class="header__hidden-nav">
+                                <ul class="header__hidden-group">
+                                    <li><span>Центр поддержки</span></li>
+                                    <li><a href="">ЧАВО</a></li>
+                                    <li><a href="">Живая поддержка</a></li>
+                                </ul>
+                                <ul class="header__hidden-group">
+                                    <li><span>Связаться с нами</span></li>
+                                    <li><a href="">Discord</a></li>
+                                </ul>
+                                <ul class="header__hidden-group">
+                                    <li><span>Пользовательское соглашение</span></li>
+                                    <li><a href="">Условия использования</a></li>
+                                    <li><a href="">Политика конфиденциальности</a></li>
+                                    <li><a href="">Принципы сообщества</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__right">
+                <a class="header__btn btn header__btn2 btn-blue" href="">Стать e-play</a>
+                <a class="header__notification" href="">
+                    <i class="header__notification-icon">
+                        <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 17.379V12C24 7.1745 20.7225 3.1095 16.2825 1.887C15.843 0.78 14.769 0 13.5 0C12.231 0 11.157 0.78 10.7175 1.887C6.2775 3.111 3 7.1745 3 12V17.379L0.439501 19.9395C0.299938 20.0786 0.189256 20.2438 0.113828 20.4259C0.0384002 20.6079 -0.000284174 20.803 1.57151e-06 21V24C1.57151e-06 24.3978 0.158037 24.7794 0.439341 25.0607C0.720646 25.342 1.10218 25.5 1.5 25.5H25.5C25.8978 25.5 26.2794 25.342 26.5607 25.0607C26.842 24.7794 27 24.3978 27 24V21C27.0003 20.803 26.9616 20.6079 26.8862 20.4259C26.8107 20.2438 26.7001 20.0786 26.5605 19.9395L24 17.379ZM24 22.5H3V21.621L5.5605 19.0605C5.70006 18.9214 5.81075 18.7562 5.88617 18.5741C5.9616 18.3921 6.00029 18.197 6 18V12C6 7.8645 9.3645 4.5 13.5 4.5C17.6355 4.5 21 7.8645 21 12V18C21 18.399 21.1575 18.78 21.4395 19.0605L24 21.621V22.5ZM13.5 30C14.4289 30.0012 15.3352 29.7129 16.0927 29.1752C16.8503 28.6376 17.4215 27.8773 17.727 27H9.273C9.57849 27.8773 10.1497 28.6376 10.9073 29.1752C11.6648 29.7129 12.5711 30.0012 13.5 30Z" fill="white"/>
+                        </svg>
+                    </i>
+                    <span class="header__notification-text">225</span>
+                </a>
+                <button class="header__user">
+                    <img src="img/header-user.png" alt="">
+                </button>
+            </div>
+            <div class="header-user__menu">
+                <a class="header-user__user" href="">
+                    <i>
+                        <img src="img/header-user2.png" alt="">
+                    </i>
+                    <span>Allodiy</span>
+                </a>
+                <div class="header-user__info">
+                    <a class="header-user__order" href="">
+                        <div class="header-user__order-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="header-user__order-title">Заказ</div>
+                    </a>
+                    <a class="header-user__premium" href="">
+                        <div class="header-user__premium-icon">
+                            <img src="img/header-user2.svg" alt="">
+                        </div>
+                        <span class="header-user__premium-title">Премиум</span>
+                    </a>
+                    <a class="header-user__help" href="">
+                        <div class="header-user__help-icon">
+                            <img src="img/header-user3.svg" alt="">
+                        </div>
+                        <div class="header-user__help-title">Помощь</div>
+                    </a>
+                </div>
+                <a class="header-user__settings" href="">
+                    <img src="img/header-user4.svg" alt="">
+                </a>
+                <a class="header-user__btn btn btn-blue" href="">
+                    <span>Стать e-play</span>
+                </a>
+            </div>
+            <div class="header-user__menu-bg"></div>
+        </div>
+    </div>
+</header>
+
+	<section class="orders2">
+		<div class="container">
+			<h2 class="orders2__title display2">Заказы</h2>
+			<div class="orders2__inner">
+				<div class="orders2__left">
+					<div class="orders2__left-wrapp">
+						<div class="orders2__tab orders2__tab--active" data-order-path="1">На утверждении</div>
+						<div class="orders2__tab" data-order-path="2">Ожидают оплаты</div>
+						<div class="orders2__tab" data-order-path="3">Готовы к игре</div>
+						<div class="orders2__tab" data-order-path="4">Отклонены</div>
+						<div class="orders2__tab" data-order-path="5">Завершено</div>
+					</div>
+				</div>
+				<div class="orders2__right orders2__right--active" data-content-path="1">
+					<div class="orders2__items">
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давай поиграем в дуо/трио</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												1200
+												<span>/Игра</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">2-ая игра бесплатно</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">4</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>4800</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn basket2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar13.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Chikidikipu 🗗 🗙🍯</div>
+										<div class="orders2__user-date">
+											<span>12 марта 2023</span>
+											<span>16:40</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте сыграем в рейтинговых лигах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders__price-text">
+												250
+												<span>/30мин</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">15% скидка</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">1</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>250</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn basket2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar14.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Meeko</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>06:23</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте поиграем на аренах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												150
+												<span>/15мин</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">8</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>2400</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn basket2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar15.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">˗ˋˏ♡ Suzo ♡ˎˊ˗</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>05:454</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="orders2__right" data-content-path="2">
+					<div class="orders2__items">
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давай поиграем в дуо/трио</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												1200
+												<span>/Игра</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">2-ая игра бесплатно</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">4</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>4800</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn basket2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn expectation2">
+											<svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 4.375C0 3.21468 0.460936 2.10188 1.28141 1.28141C2.10188 0.460936 3.21468 0 4.375 0H23.625C24.7853 0 25.8981 0.460936 26.7186 1.28141C27.5391 2.10188 28 3.21468 28 4.375V16.625C28 17.7853 27.5391 18.8981 26.7186 19.7186C25.8981 20.5391 24.7853 21 23.625 21H4.375C3.21468 21 2.10188 20.5391 1.28141 19.7186C0.460936 18.8981 0 17.7853 0 16.625V4.375ZM4.375 1.75C3.67881 1.75 3.01113 2.02656 2.51884 2.51884C2.02656 3.01113 1.75 3.67881 1.75 4.375V6.65H26.25V4.375C26.25 3.67881 25.9734 3.01113 25.4812 2.51884C24.9889 2.02656 24.3212 1.75 23.625 1.75H4.375ZM1.75 16.625C1.75 17.3212 2.02656 17.9889 2.51884 18.4812C3.01113 18.9734 3.67881 19.25 4.375 19.25H23.625C24.3212 19.25 24.9889 18.9734 25.4812 18.4812C25.9734 17.9889 26.25 17.3212 26.25 16.625V8.4H1.75V16.625ZM19.075 14.35C18.8429 14.35 18.6204 14.4422 18.4563 14.6063C18.2922 14.7704 18.2 14.9929 18.2 15.225C18.2 15.4571 18.2922 15.6796 18.4563 15.8437C18.6204 16.0078 18.8429 16.1 19.075 16.1H22.925C23.1571 16.1 23.3796 16.0078 23.5437 15.8437C23.7078 15.6796 23.8 15.4571 23.8 15.225C23.8 14.9929 23.7078 14.7704 23.5437 14.6063C23.3796 14.4422 23.1571 14.35 22.925 14.35H19.075Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar13.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Chikidikipu 🗗 🗙🍯</div>
+										<div class="orders2__user-date">
+											<span>12 марта 2023</span>
+											<span>16:40</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте сыграем в рейтинговых лигах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders__price-text">
+												250
+												<span>/30мин</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">15% скидка</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">1</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>250</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn basket2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn expectation2">
+											<svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 4.375C0 3.21468 0.460936 2.10188 1.28141 1.28141C2.10188 0.460936 3.21468 0 4.375 0H23.625C24.7853 0 25.8981 0.460936 26.7186 1.28141C27.5391 2.10188 28 3.21468 28 4.375V16.625C28 17.7853 27.5391 18.8981 26.7186 19.7186C25.8981 20.5391 24.7853 21 23.625 21H4.375C3.21468 21 2.10188 20.5391 1.28141 19.7186C0.460936 18.8981 0 17.7853 0 16.625V4.375ZM4.375 1.75C3.67881 1.75 3.01113 2.02656 2.51884 2.51884C2.02656 3.01113 1.75 3.67881 1.75 4.375V6.65H26.25V4.375C26.25 3.67881 25.9734 3.01113 25.4812 2.51884C24.9889 2.02656 24.3212 1.75 23.625 1.75H4.375ZM1.75 16.625C1.75 17.3212 2.02656 17.9889 2.51884 18.4812C3.01113 18.9734 3.67881 19.25 4.375 19.25H23.625C24.3212 19.25 24.9889 18.9734 25.4812 18.4812C25.9734 17.9889 26.25 17.3212 26.25 16.625V8.4H1.75V16.625ZM19.075 14.35C18.8429 14.35 18.6204 14.4422 18.4563 14.6063C18.2922 14.7704 18.2 14.9929 18.2 15.225C18.2 15.4571 18.2922 15.6796 18.4563 15.8437C18.6204 16.0078 18.8429 16.1 19.075 16.1H22.925C23.1571 16.1 23.3796 16.0078 23.5437 15.8437C23.7078 15.6796 23.8 15.4571 23.8 15.225C23.8 14.9929 23.7078 14.7704 23.5437 14.6063C23.3796 14.4422 23.1571 14.35 22.925 14.35H19.075Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar14.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Meeko</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>06:23</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте поиграем на аренах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												150
+												<span>/15мин</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">8</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>2400</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn basket2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn expectation2">
+											<svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 4.375C0 3.21468 0.460936 2.10188 1.28141 1.28141C2.10188 0.460936 3.21468 0 4.375 0H23.625C24.7853 0 25.8981 0.460936 26.7186 1.28141C27.5391 2.10188 28 3.21468 28 4.375V16.625C28 17.7853 27.5391 18.8981 26.7186 19.7186C25.8981 20.5391 24.7853 21 23.625 21H4.375C3.21468 21 2.10188 20.5391 1.28141 19.7186C0.460936 18.8981 0 17.7853 0 16.625V4.375ZM4.375 1.75C3.67881 1.75 3.01113 2.02656 2.51884 2.51884C2.02656 3.01113 1.75 3.67881 1.75 4.375V6.65H26.25V4.375C26.25 3.67881 25.9734 3.01113 25.4812 2.51884C24.9889 2.02656 24.3212 1.75 23.625 1.75H4.375ZM1.75 16.625C1.75 17.3212 2.02656 17.9889 2.51884 18.4812C3.01113 18.9734 3.67881 19.25 4.375 19.25H23.625C24.3212 19.25 24.9889 18.9734 25.4812 18.4812C25.9734 17.9889 26.25 17.3212 26.25 16.625V8.4H1.75V16.625ZM19.075 14.35C18.8429 14.35 18.6204 14.4422 18.4563 14.6063C18.2922 14.7704 18.2 14.9929 18.2 15.225C18.2 15.4571 18.2922 15.6796 18.4563 15.8437C18.6204 16.0078 18.8429 16.1 19.075 16.1H22.925C23.1571 16.1 23.3796 16.0078 23.5437 15.8437C23.7078 15.6796 23.8 15.4571 23.8 15.225C23.8 14.9929 23.7078 14.7704 23.5437 14.6063C23.3796 14.4422 23.1571 14.35 22.925 14.35H19.075Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar15.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">˗ˋˏ♡ Suzo ♡ˎˊ˗</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>05:454</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="orders2__right" data-content-path="3">
+					<div class="orders2__items">
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давай поиграем в дуо/трио</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												1200
+												<span>/Игра</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">2-ая игра бесплатно</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">4</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>4800</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn game2">
+											<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08827 2.90655C4.51628 1.19916 6.05109 0 7.8127 0H27.7902C28.6453 0.00180099 29.4759 0.285454 30.1535 0.807041C30.8311 1.32863 31.3178 2.05905 31.5383 2.88521C32.1627 5.22163 33.3644 9.64836 35.5747 17.604C35.5747 17.604 35.5747 17.604 35.5747 17.604C36.3989 20.5702 35.1022 23.255 32.9548 24.4106C31.8797 24.9892 30.6014 25.1756 29.3131 24.8176C28.0255 24.4597 26.7836 23.5746 25.7351 22.1067C25.4991 21.7763 25.5756 21.3171 25.9061 21.081C26.2365 20.845 26.6958 20.9215 26.9318 21.252C27.8226 22.4991 28.8009 23.1489 29.7069 23.4007C30.6121 23.6523 31.5007 23.5231 32.258 23.1156C33.7754 22.299 34.8058 20.3296 34.1578 17.9977C31.9467 10.0392 30.7436 5.60737 30.1175 3.26466C29.9804 2.751 29.6778 2.29664 29.2565 1.97235C28.8354 1.64821 28.3192 1.47186 27.7879 1.47059C27.7876 1.47059 27.7881 1.47059 27.7879 1.47059H7.8127C6.72605 1.47059 5.77872 2.21049 5.51465 3.26439C4.20978 8.45905 3.04888 13.0267 1.66706 17.9975C1.01984 20.3294 2.05024 22.2991 3.56744 23.1156C4.32458 23.5231 5.21301 23.6523 6.11808 23.4007C7.02392 23.1489 8.00216 22.4991 8.89299 21.252C9.12903 20.9215 9.58825 20.845 9.9187 21.081C10.2492 21.3171 10.3257 21.7763 10.0897 22.1067C9.04122 23.5746 7.7994 24.4597 6.51192 24.8176C5.22369 25.1757 3.94557 24.9892 2.87049 24.4106C0.723309 23.2549 -0.573319 20.5702 0.250055 17.6041C1.62657 12.6524 2.78373 8.09988 4.08827 2.90655Z" fill="#7D7D97"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.595 0C12.001 0 12.3302 0.329202 12.3302 0.735293V3.83812C12.3302 4.46603 12.5797 5.06822 13.0237 5.51222C13.4677 5.95621 14.0699 6.20565 14.6978 6.20565H20.9034C21.5313 6.20565 22.1335 5.95621 22.5775 5.51222C23.0215 5.06822 23.271 4.46603 23.271 3.83812V0.735293C23.271 0.329202 23.6002 0 24.0063 0C24.4123 0 24.7415 0.329202 24.7415 0.735293V3.83812C24.7415 4.85605 24.3372 5.83229 23.6174 6.55208C22.8976 7.27186 21.9214 7.67623 20.9034 7.67623H14.6978C13.6798 7.67623 12.7036 7.27186 11.9838 6.55208C11.264 5.83229 10.8597 4.85605 10.8597 3.83812V0.735293C10.8597 0.329202 11.1889 0 11.595 0ZM8.88099 13.5355C9.60078 12.8157 10.577 12.4113 11.595 12.4113C12.6129 12.4113 13.5891 12.8157 14.3089 13.5355C15.0287 14.2552 15.4331 15.2315 15.4331 16.2494C15.4331 17.2673 15.0287 18.2436 14.3089 18.9634C13.5891 19.6832 12.6129 20.0875 11.595 20.0875C10.577 20.0875 9.60078 19.6832 8.88099 18.9634C8.16121 18.2436 7.75684 17.2673 7.75684 16.2494C7.75684 15.2315 8.16121 14.2552 8.88099 13.5355ZM11.595 13.8819C10.967 13.8819 10.3649 14.1313 9.92086 14.5753C9.47686 15.0193 9.22742 15.6215 9.22742 16.2494C9.22742 16.8773 9.47686 17.4795 9.92086 17.9235C10.3649 18.3675 10.967 18.6169 11.595 18.6169C12.2229 18.6169 12.8251 18.3675 13.2691 17.9235C13.713 17.4795 13.9625 16.8773 13.9625 16.2494C13.9625 15.6215 13.713 15.0193 13.2691 14.5753C12.8251 14.1313 12.2229 13.8819 11.595 13.8819ZM21.2923 13.5355C22.0121 12.8157 22.9883 12.4113 24.0063 12.4113C25.0242 12.4113 26.0004 12.8157 26.7202 13.5355C27.44 14.2552 27.8444 15.2315 27.8444 16.2494C27.8444 17.2673 27.44 18.2436 26.7202 18.9634C26.0004 19.6832 25.0242 20.0875 24.0063 20.0875C22.9883 20.0875 22.0121 19.6832 21.2923 18.9634C20.5725 18.2436 20.1681 17.2673 20.1681 16.2494C20.1681 15.2315 20.5725 14.2552 21.2923 13.5355ZM24.0063 13.8819C23.3783 13.8819 22.7762 14.1313 22.3322 14.5753C21.8882 15.0193 21.6387 15.6215 21.6387 16.2494C21.6387 16.8773 21.8882 17.4795 22.3322 17.9235C22.7762 18.3675 23.3783 18.6169 24.0063 18.6169C24.6342 18.6169 25.2363 18.3675 25.6803 17.9235C26.1243 17.4795 26.3738 16.8773 26.3738 16.2494C26.3738 15.6215 26.1243 15.0193 25.6803 14.5753C25.2363 14.1313 24.6342 13.8819 24.0063 13.8819Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn rating">
+											<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1086 1L17.1964 6.96464L18.0213 6.39932L17.1964 6.96464C17.4565 7.3441 17.8394 7.62231 18.2806 7.75238L25.2166 9.79697L20.8071 15.5279C20.5265 15.8925 20.3803 16.3426 20.3929 16.8025L20.5917 24.0308L13.7787 21.608C13.3452 21.4539 12.8719 21.4539 12.4385 21.608L5.62542 24.0308L5.82422 16.8025C5.83687 16.3426 5.69061 15.8925 5.41008 15.5279L1.00058 9.79697L7.9365 7.75238C8.37775 7.62231 8.76067 7.3441 9.02074 6.96464L13.1086 1Z" stroke="#7D7D97" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar13.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Chikidikipu 🗗 🗙🍯</div>
+										<div class="orders2__user-date">
+											<span>12 марта 2023</span>
+											<span>16:40</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте сыграем в рейтинговых лигах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders__price-text">
+												250
+												<span>/30мин</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">15% скидка</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">1</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>250</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn game2">
+											<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08827 2.90655C4.51628 1.19916 6.05109 0 7.8127 0H27.7902C28.6453 0.00180099 29.4759 0.285454 30.1535 0.807041C30.8311 1.32863 31.3178 2.05905 31.5383 2.88521C32.1627 5.22163 33.3644 9.64836 35.5747 17.604C35.5747 17.604 35.5747 17.604 35.5747 17.604C36.3989 20.5702 35.1022 23.255 32.9548 24.4106C31.8797 24.9892 30.6014 25.1756 29.3131 24.8176C28.0255 24.4597 26.7836 23.5746 25.7351 22.1067C25.4991 21.7763 25.5756 21.3171 25.9061 21.081C26.2365 20.845 26.6958 20.9215 26.9318 21.252C27.8226 22.4991 28.8009 23.1489 29.7069 23.4007C30.6121 23.6523 31.5007 23.5231 32.258 23.1156C33.7754 22.299 34.8058 20.3296 34.1578 17.9977C31.9467 10.0392 30.7436 5.60737 30.1175 3.26466C29.9804 2.751 29.6778 2.29664 29.2565 1.97235C28.8354 1.64821 28.3192 1.47186 27.7879 1.47059C27.7876 1.47059 27.7881 1.47059 27.7879 1.47059H7.8127C6.72605 1.47059 5.77872 2.21049 5.51465 3.26439C4.20978 8.45905 3.04888 13.0267 1.66706 17.9975C1.01984 20.3294 2.05024 22.2991 3.56744 23.1156C4.32458 23.5231 5.21301 23.6523 6.11808 23.4007C7.02392 23.1489 8.00216 22.4991 8.89299 21.252C9.12903 20.9215 9.58825 20.845 9.9187 21.081C10.2492 21.3171 10.3257 21.7763 10.0897 22.1067C9.04122 23.5746 7.7994 24.4597 6.51192 24.8176C5.22369 25.1757 3.94557 24.9892 2.87049 24.4106C0.723309 23.2549 -0.573319 20.5702 0.250055 17.6041C1.62657 12.6524 2.78373 8.09988 4.08827 2.90655Z" fill="#7D7D97"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.595 0C12.001 0 12.3302 0.329202 12.3302 0.735293V3.83812C12.3302 4.46603 12.5797 5.06822 13.0237 5.51222C13.4677 5.95621 14.0699 6.20565 14.6978 6.20565H20.9034C21.5313 6.20565 22.1335 5.95621 22.5775 5.51222C23.0215 5.06822 23.271 4.46603 23.271 3.83812V0.735293C23.271 0.329202 23.6002 0 24.0063 0C24.4123 0 24.7415 0.329202 24.7415 0.735293V3.83812C24.7415 4.85605 24.3372 5.83229 23.6174 6.55208C22.8976 7.27186 21.9214 7.67623 20.9034 7.67623H14.6978C13.6798 7.67623 12.7036 7.27186 11.9838 6.55208C11.264 5.83229 10.8597 4.85605 10.8597 3.83812V0.735293C10.8597 0.329202 11.1889 0 11.595 0ZM8.88099 13.5355C9.60078 12.8157 10.577 12.4113 11.595 12.4113C12.6129 12.4113 13.5891 12.8157 14.3089 13.5355C15.0287 14.2552 15.4331 15.2315 15.4331 16.2494C15.4331 17.2673 15.0287 18.2436 14.3089 18.9634C13.5891 19.6832 12.6129 20.0875 11.595 20.0875C10.577 20.0875 9.60078 19.6832 8.88099 18.9634C8.16121 18.2436 7.75684 17.2673 7.75684 16.2494C7.75684 15.2315 8.16121 14.2552 8.88099 13.5355ZM11.595 13.8819C10.967 13.8819 10.3649 14.1313 9.92086 14.5753C9.47686 15.0193 9.22742 15.6215 9.22742 16.2494C9.22742 16.8773 9.47686 17.4795 9.92086 17.9235C10.3649 18.3675 10.967 18.6169 11.595 18.6169C12.2229 18.6169 12.8251 18.3675 13.2691 17.9235C13.713 17.4795 13.9625 16.8773 13.9625 16.2494C13.9625 15.6215 13.713 15.0193 13.2691 14.5753C12.8251 14.1313 12.2229 13.8819 11.595 13.8819ZM21.2923 13.5355C22.0121 12.8157 22.9883 12.4113 24.0063 12.4113C25.0242 12.4113 26.0004 12.8157 26.7202 13.5355C27.44 14.2552 27.8444 15.2315 27.8444 16.2494C27.8444 17.2673 27.44 18.2436 26.7202 18.9634C26.0004 19.6832 25.0242 20.0875 24.0063 20.0875C22.9883 20.0875 22.0121 19.6832 21.2923 18.9634C20.5725 18.2436 20.1681 17.2673 20.1681 16.2494C20.1681 15.2315 20.5725 14.2552 21.2923 13.5355ZM24.0063 13.8819C23.3783 13.8819 22.7762 14.1313 22.3322 14.5753C21.8882 15.0193 21.6387 15.6215 21.6387 16.2494C21.6387 16.8773 21.8882 17.4795 22.3322 17.9235C22.7762 18.3675 23.3783 18.6169 24.0063 18.6169C24.6342 18.6169 25.2363 18.3675 25.6803 17.9235C26.1243 17.4795 26.3738 16.8773 26.3738 16.2494C26.3738 15.6215 26.1243 15.0193 25.6803 14.5753C25.2363 14.1313 24.6342 13.8819 24.0063 13.8819Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn rating">
+											<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1086 1L17.1964 6.96464L18.0213 6.39932L17.1964 6.96464C17.4565 7.3441 17.8394 7.62231 18.2806 7.75238L25.2166 9.79697L20.8071 15.5279C20.5265 15.8925 20.3803 16.3426 20.3929 16.8025L20.5917 24.0308L13.7787 21.608C13.3452 21.4539 12.8719 21.4539 12.4385 21.608L5.62542 24.0308L5.82422 16.8025C5.83687 16.3426 5.69061 15.8925 5.41008 15.5279L1.00058 9.79697L7.9365 7.75238C8.37775 7.62231 8.76067 7.3441 9.02074 6.96464L13.1086 1Z" stroke="#7D7D97" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar14.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Meeko</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>06:23</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте поиграем на аренах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												150
+												<span>/15мин</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">8</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>2400</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn game2">
+											<svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08827 2.90655C4.51628 1.19916 6.05109 0 7.8127 0H27.7902C28.6453 0.00180099 29.4759 0.285454 30.1535 0.807041C30.8311 1.32863 31.3178 2.05905 31.5383 2.88521C32.1627 5.22163 33.3644 9.64836 35.5747 17.604C35.5747 17.604 35.5747 17.604 35.5747 17.604C36.3989 20.5702 35.1022 23.255 32.9548 24.4106C31.8797 24.9892 30.6014 25.1756 29.3131 24.8176C28.0255 24.4597 26.7836 23.5746 25.7351 22.1067C25.4991 21.7763 25.5756 21.3171 25.9061 21.081C26.2365 20.845 26.6958 20.9215 26.9318 21.252C27.8226 22.4991 28.8009 23.1489 29.7069 23.4007C30.6121 23.6523 31.5007 23.5231 32.258 23.1156C33.7754 22.299 34.8058 20.3296 34.1578 17.9977C31.9467 10.0392 30.7436 5.60737 30.1175 3.26466C29.9804 2.751 29.6778 2.29664 29.2565 1.97235C28.8354 1.64821 28.3192 1.47186 27.7879 1.47059C27.7876 1.47059 27.7881 1.47059 27.7879 1.47059H7.8127C6.72605 1.47059 5.77872 2.21049 5.51465 3.26439C4.20978 8.45905 3.04888 13.0267 1.66706 17.9975C1.01984 20.3294 2.05024 22.2991 3.56744 23.1156C4.32458 23.5231 5.21301 23.6523 6.11808 23.4007C7.02392 23.1489 8.00216 22.4991 8.89299 21.252C9.12903 20.9215 9.58825 20.845 9.9187 21.081C10.2492 21.3171 10.3257 21.7763 10.0897 22.1067C9.04122 23.5746 7.7994 24.4597 6.51192 24.8176C5.22369 25.1757 3.94557 24.9892 2.87049 24.4106C0.723309 23.2549 -0.573319 20.5702 0.250055 17.6041C1.62657 12.6524 2.78373 8.09988 4.08827 2.90655Z" fill="#7D7D97"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.595 0C12.001 0 12.3302 0.329202 12.3302 0.735293V3.83812C12.3302 4.46603 12.5797 5.06822 13.0237 5.51222C13.4677 5.95621 14.0699 6.20565 14.6978 6.20565H20.9034C21.5313 6.20565 22.1335 5.95621 22.5775 5.51222C23.0215 5.06822 23.271 4.46603 23.271 3.83812V0.735293C23.271 0.329202 23.6002 0 24.0063 0C24.4123 0 24.7415 0.329202 24.7415 0.735293V3.83812C24.7415 4.85605 24.3372 5.83229 23.6174 6.55208C22.8976 7.27186 21.9214 7.67623 20.9034 7.67623H14.6978C13.6798 7.67623 12.7036 7.27186 11.9838 6.55208C11.264 5.83229 10.8597 4.85605 10.8597 3.83812V0.735293C10.8597 0.329202 11.1889 0 11.595 0ZM8.88099 13.5355C9.60078 12.8157 10.577 12.4113 11.595 12.4113C12.6129 12.4113 13.5891 12.8157 14.3089 13.5355C15.0287 14.2552 15.4331 15.2315 15.4331 16.2494C15.4331 17.2673 15.0287 18.2436 14.3089 18.9634C13.5891 19.6832 12.6129 20.0875 11.595 20.0875C10.577 20.0875 9.60078 19.6832 8.88099 18.9634C8.16121 18.2436 7.75684 17.2673 7.75684 16.2494C7.75684 15.2315 8.16121 14.2552 8.88099 13.5355ZM11.595 13.8819C10.967 13.8819 10.3649 14.1313 9.92086 14.5753C9.47686 15.0193 9.22742 15.6215 9.22742 16.2494C9.22742 16.8773 9.47686 17.4795 9.92086 17.9235C10.3649 18.3675 10.967 18.6169 11.595 18.6169C12.2229 18.6169 12.8251 18.3675 13.2691 17.9235C13.713 17.4795 13.9625 16.8773 13.9625 16.2494C13.9625 15.6215 13.713 15.0193 13.2691 14.5753C12.8251 14.1313 12.2229 13.8819 11.595 13.8819ZM21.2923 13.5355C22.0121 12.8157 22.9883 12.4113 24.0063 12.4113C25.0242 12.4113 26.0004 12.8157 26.7202 13.5355C27.44 14.2552 27.8444 15.2315 27.8444 16.2494C27.8444 17.2673 27.44 18.2436 26.7202 18.9634C26.0004 19.6832 25.0242 20.0875 24.0063 20.0875C22.9883 20.0875 22.0121 19.6832 21.2923 18.9634C20.5725 18.2436 20.1681 17.2673 20.1681 16.2494C20.1681 15.2315 20.5725 14.2552 21.2923 13.5355ZM24.0063 13.8819C23.3783 13.8819 22.7762 14.1313 22.3322 14.5753C21.8882 15.0193 21.6387 15.6215 21.6387 16.2494C21.6387 16.8773 21.8882 17.4795 22.3322 17.9235C22.7762 18.3675 23.3783 18.6169 24.0063 18.6169C24.6342 18.6169 25.2363 18.3675 25.6803 17.9235C26.1243 17.4795 26.3738 16.8773 26.3738 16.2494C26.3738 15.6215 26.1243 15.0193 25.6803 14.5753C25.2363 14.1313 24.6342 13.8819 24.0063 13.8819Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn rating">
+											<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1086 1L17.1964 6.96464L18.0213 6.39932L17.1964 6.96464C17.4565 7.3441 17.8394 7.62231 18.2806 7.75238L25.2166 9.79697L20.8071 15.5279C20.5265 15.8925 20.3803 16.3426 20.3929 16.8025L20.5917 24.0308L13.7787 21.608C13.3452 21.4539 12.8719 21.4539 12.4385 21.608L5.62542 24.0308L5.82422 16.8025C5.83687 16.3426 5.69061 15.8925 5.41008 15.5279L1.00058 9.79697L7.9365 7.75238C8.37775 7.62231 8.76067 7.3441 9.02074 6.96464L13.1086 1Z" stroke="#7D7D97" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar15.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">˗ˋˏ♡ Suzo ♡ˎˊ˗</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>05:454</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="orders2__right" data-content-path="4">
+					<div class="orders2__items">
+						<div class="orders2__item dismissed2">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давай поиграем в дуо/трио</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												1200
+												<span>/Игра</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">2-ая игра бесплатно</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">4</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>4800</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn deleted2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar13.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Chikidikipu 🗗 🗙🍯</div>
+										<div class="orders2__user-date">
+											<span>12 марта 2023</span>
+											<span>16:40</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item dismissed2">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте сыграем в рейтинговых лигах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders__price-text">
+												250
+												<span>/30мин</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">15% скидка</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">1</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>250</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn deleted2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar14.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Meeko</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>06:23</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item dismissed2">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте поиграем на аренах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												150
+												<span>/15мин</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">8</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>2400</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn deleted2">
+											<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.55556 0V1.11111H0V3.33333H1.11111V17.7778C1.11111 18.3671 1.34524 18.9324 1.76198 19.3491C2.17873 19.7659 2.74396 20 3.33333 20H14.4444C15.0338 20 15.599 19.7659 16.0158 19.3491C16.4325 18.9324 16.6667 18.3671 16.6667 17.7778V3.33333H17.7778V1.11111H12.2222V0H5.55556ZM3.33333 3.33333H14.4444V17.7778H3.33333V3.33333ZM5.55556 5.55556V15.5556H7.77778V5.55556H5.55556ZM10 5.55556V15.5556H12.2222V5.55556H10Z" fill="#7D7D97"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar15.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">˗ˋˏ♡ Suzo ♡ˎˊ˗</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>05:454</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="orders2__right" data-content-path="5">
+					<div class="orders2__items">
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давай поиграем в дуо/трио</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												1200
+												<span>/Игра</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">2-ая игра бесплатно</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">4</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>4800</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn game3">
+											<svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M27.1104 22.363C31.0665 27.9015 37.3156 23.8109 35.8138 18.4069C33.5588 10.2905 32.3324 5.77265 31.6947 3.38632C31.5123 2.70301 31.1098 2.09889 30.5494 1.66749C29.9889 1.23609 29.3019 1.00149 28.5947 1H8.21918C6.7665 1 5.50054 1.98903 5.14766 3.3974C3.81682 8.69542 2.63474 13.3462 1.22795 18.4069C-0.272209 23.8109 5.97528 27.9015 9.93138 22.363" stroke="#AE7CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M24.7365 1V4.16489C24.7365 5.00427 24.4031 5.80927 23.8096 6.4028C23.216 6.99633 22.411 7.32977 21.5717 7.32977H15.2419C14.4025 7.32977 13.5975 6.99633 13.004 6.4028C12.4104 5.80927 12.077 5.00427 12.077 4.16489V1M12.077 19.9893C12.9164 19.9893 13.7214 19.6559 14.3149 19.0623C14.9084 18.4688 15.2419 17.6638 15.2419 16.8244C15.2419 15.985 14.9084 15.18 14.3149 14.5865C13.7214 13.993 12.9164 13.6595 12.077 13.6595C11.2376 13.6595 10.4326 13.993 9.83908 14.5865C9.24555 15.18 8.91211 15.985 8.91211 16.8244C8.91211 17.6638 9.24555 18.4688 9.83908 19.0623C10.4326 19.6559 11.2376 19.9893 12.077 19.9893ZM24.7365 19.9893C25.5759 19.9893 26.3809 19.6559 26.9744 19.0623C27.568 18.4688 27.9014 17.6638 27.9014 16.8244C27.9014 15.985 27.568 15.18 26.9744 14.5865C26.3809 13.993 25.5759 13.6595 24.7365 13.6595C23.8972 13.6595 23.0922 13.993 22.4986 14.5865C21.9051 15.18 21.5717 15.985 21.5717 16.8244C21.5717 17.6638 21.9051 18.4688 22.4986 19.0623C23.0922 19.6559 23.8972 19.9893 24.7365 19.9893Z" stroke="#AE7CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn rating2">
+											<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1086 1L17.1964 6.96464L18.0213 6.39932L17.1964 6.96464C17.4565 7.3441 17.8394 7.62231 18.2806 7.75238L25.2166 9.79697L20.8071 15.5279C20.5265 15.8925 20.3803 16.3426 20.3929 16.8025L20.5917 24.0308L13.7787 21.608C13.3452 21.4539 12.8719 21.4539 12.4385 21.608L5.62542 24.0308L5.82422 16.8025C5.83687 16.3426 5.69061 15.8925 5.41008 15.5279L1.00058 9.79697L7.9365 7.75238C8.37775 7.62231 8.76067 7.3441 9.02074 6.96464L13.1086 1Z" stroke="#FFC700" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar13.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Chikidikipu 🗗 🗙🍯</div>
+										<div class="orders2__user-date">
+											<span>12 марта 2023</span>
+											<span>16:40</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте сыграем в рейтинговых лигах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders__price-text">
+												250
+												<span>/30мин</span>
+											</div>
+										</div>
+										<div class="orders2__item-discount">15% скидка</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">1</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>250</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn game3">
+											<svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M27.1104 22.363C31.0665 27.9015 37.3156 23.8109 35.8138 18.4069C33.5588 10.2905 32.3324 5.77265 31.6947 3.38632C31.5123 2.70301 31.1098 2.09889 30.5494 1.66749C29.9889 1.23609 29.3019 1.00149 28.5947 1H8.21918C6.7665 1 5.50054 1.98903 5.14766 3.3974C3.81682 8.69542 2.63474 13.3462 1.22795 18.4069C-0.272209 23.8109 5.97528 27.9015 9.93138 22.363" stroke="#AE7CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M24.7365 1V4.16489C24.7365 5.00427 24.4031 5.80927 23.8096 6.4028C23.216 6.99633 22.411 7.32977 21.5717 7.32977H15.2419C14.4025 7.32977 13.5975 6.99633 13.004 6.4028C12.4104 5.80927 12.077 5.00427 12.077 4.16489V1M12.077 19.9893C12.9164 19.9893 13.7214 19.6559 14.3149 19.0623C14.9084 18.4688 15.2419 17.6638 15.2419 16.8244C15.2419 15.985 14.9084 15.18 14.3149 14.5865C13.7214 13.993 12.9164 13.6595 12.077 13.6595C11.2376 13.6595 10.4326 13.993 9.83908 14.5865C9.24555 15.18 8.91211 15.985 8.91211 16.8244C8.91211 17.6638 9.24555 18.4688 9.83908 19.0623C10.4326 19.6559 11.2376 19.9893 12.077 19.9893ZM24.7365 19.9893C25.5759 19.9893 26.3809 19.6559 26.9744 19.0623C27.568 18.4688 27.9014 17.6638 27.9014 16.8244C27.9014 15.985 27.568 15.18 26.9744 14.5865C26.3809 13.993 25.5759 13.6595 24.7365 13.6595C23.8972 13.6595 23.0922 13.993 22.4986 14.5865C21.9051 15.18 21.5717 15.985 21.5717 16.8244C21.5717 17.6638 21.9051 18.4688 22.4986 19.0623C23.0922 19.6559 23.8972 19.9893 24.7365 19.9893Z" stroke="#AE7CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn rating2">
+											<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1086 1L17.1964 6.96464L18.0213 6.39932L17.1964 6.96464C17.4565 7.3441 17.8394 7.62231 18.2806 7.75238L25.2166 9.79697L20.8071 15.5279C20.5265 15.8925 20.3803 16.3426 20.3929 16.8025L20.5917 24.0308L13.7787 21.608C13.3452 21.4539 12.8719 21.4539 12.4385 21.608L5.62542 24.0308L5.82422 16.8025C5.83687 16.3426 5.69061 15.8925 5.41008 15.5279L1.00058 9.79697L7.9365 7.75238C8.37775 7.62231 8.76067 7.3441 9.02074 6.96464L13.1086 1Z" stroke="#FFC700" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar14.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">Meeko</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>06:23</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+						<div class="orders2__item">
+							<div class="orders2__item-left">
+								<div class="orders2__item-desc">
+									<div class="orders2__item-title">Давайте поиграем на аренах</div>
+									<div class="orders2__item-info">
+										<div class="orders2__item-price">
+											<img src="img/price-icon.svg" alt="">
+											<div class="orders2__price-text">
+												150
+												<span>/15мин</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="orders2__item-data">
+									<div class="orders2__item-quantity">
+										<div class="orders2__quantity-title">Количество</div>
+										<div class="orders2__quantity-number">8</div>
+									</div>
+									<div class="orders2__item-bonus">
+										<div class="orders2__bonus-title">Вы получите</div>
+										<div class="orders2__bonus-amount">
+											<img src="img/price-icon.svg" alt="">
+											<span>2400</span>
+										</div>
+									</div>
+									<div class="orders2__item-btns">
+										<button class="orders2__item-btn game3">
+											<svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M27.1104 22.363C31.0665 27.9015 37.3156 23.8109 35.8138 18.4069C33.5588 10.2905 32.3324 5.77265 31.6947 3.38632C31.5123 2.70301 31.1098 2.09889 30.5494 1.66749C29.9889 1.23609 29.3019 1.00149 28.5947 1H8.21918C6.7665 1 5.50054 1.98903 5.14766 3.3974C3.81682 8.69542 2.63474 13.3462 1.22795 18.4069C-0.272209 23.8109 5.97528 27.9015 9.93138 22.363" stroke="#AE7CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M24.7365 1V4.16489C24.7365 5.00427 24.4031 5.80927 23.8096 6.4028C23.216 6.99633 22.411 7.32977 21.5717 7.32977H15.2419C14.4025 7.32977 13.5975 6.99633 13.004 6.4028C12.4104 5.80927 12.077 5.00427 12.077 4.16489V1M12.077 19.9893C12.9164 19.9893 13.7214 19.6559 14.3149 19.0623C14.9084 18.4688 15.2419 17.6638 15.2419 16.8244C15.2419 15.985 14.9084 15.18 14.3149 14.5865C13.7214 13.993 12.9164 13.6595 12.077 13.6595C11.2376 13.6595 10.4326 13.993 9.83908 14.5865C9.24555 15.18 8.91211 15.985 8.91211 16.8244C8.91211 17.6638 9.24555 18.4688 9.83908 19.0623C10.4326 19.6559 11.2376 19.9893 12.077 19.9893ZM24.7365 19.9893C25.5759 19.9893 26.3809 19.6559 26.9744 19.0623C27.568 18.4688 27.9014 17.6638 27.9014 16.8244C27.9014 15.985 27.568 15.18 26.9744 14.5865C26.3809 13.993 25.5759 13.6595 24.7365 13.6595C23.8972 13.6595 23.0922 13.993 22.4986 14.5865C21.9051 15.18 21.5717 15.985 21.5717 16.8244C21.5717 17.6638 21.9051 18.4688 22.4986 19.0623C23.0922 19.6559 23.8972 19.9893 24.7365 19.9893Z" stroke="#AE7CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</button>
+										<button class="orders2__item-btn rating2">
+											<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1086 1L17.1964 6.96464L18.0213 6.39932L17.1964 6.96464C17.4565 7.3441 17.8394 7.62231 18.2806 7.75238L25.2166 9.79697L20.8071 15.5279C20.5265 15.8925 20.3803 16.3426 20.3929 16.8025L20.5917 24.0308L13.7787 21.608C13.3452 21.4539 12.8719 21.4539 12.4385 21.608L5.62542 24.0308L5.82422 16.8025C5.83687 16.3426 5.69061 15.8925 5.41008 15.5279L1.00058 9.79697L7.9365 7.75238C8.37775 7.62231 8.76067 7.3441 9.02074 6.96464L13.1086 1Z" stroke="#FFC700" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="orders2__item-right">
+								<a href="" class="orders2__item-user">
+									<div class="orders2__user-logo">
+										<img src="img/avatar15.png" alt="">
+									</div>
+									<div class="orders2__user-desc">
+										<div class="orders2__user-title">˗ˋˏ♡ Suzo ♡ˎˊ˗</div>
+										<div class="orders2__user-date">
+											<span>10 марта 2023</span>
+											<span>05:454</span>
+										</div>
+									</div>
+								</a>
+								<button class="orders2__user-btn btn-border">Связаться</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer"></footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
