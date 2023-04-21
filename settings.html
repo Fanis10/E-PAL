@@ -196,7 +196,12 @@
 						<div class="settings__gender">
 							<div class="settings__gender-desc">
 								<div class="settings__gender-title">Пол</div>
-								<textarea class="settings__country-text edit-text" data-input-path="2">Мужской</textarea>
+								<div class="settings__select custom_select" data-select-path="2">
+									<select>
+										<option value="Мужской">Мужской</option>
+										<option value="Женский">Женский</option>
+									</select>
+								</div>
 							</div>
 							<button class="settings__info-btn" data-btn-path="2">
 								<span>Редактировать</span>
@@ -209,7 +214,7 @@
 						<div class="settings__age">
 							<div class="settings__age-desc">
 								<div class="settings__age-title">Возраст</div>
-								<textarea class="settings__country-text edit-text" data-input-path="3">8 апреля, 2000</textarea>
+								<input class="date-input" type="date" data-date="" data-date-format="DD MMMM, YYYY" value="2000-04-08" data-date-path="3">
 							</div>
 							<button class="settings__info-btn" data-btn-path="3">
 								<span>Редактировать</span>
